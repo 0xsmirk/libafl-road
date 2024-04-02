@@ -20,4 +20,4 @@ LibAFL Study Road
 
 ## Practice
 
-- [x] [CVE-2014-0160 openssl heartbleed](./Practice/openssl_heartbleed/README.md)
+- [x] [CVE-2014-0160 openssl heartbleed](./practice/openssl_heartbleed/README.md)
