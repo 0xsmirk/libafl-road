@@ -1,0 +1,16 @@
+[workspace]
+
+members = ["exercise-1"
+    
+]
+
+# 希望恐慌不会简单地导致程序退出，而是会引发一个 abort，然后可以被模糊器捕获。
+[profile.dev]
+panic = "abort"
+
+# 编译release版本的参数
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3
+debug = true

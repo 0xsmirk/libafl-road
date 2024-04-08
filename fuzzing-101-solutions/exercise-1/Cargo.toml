@@ -1,0 +1,15 @@
+[package]
+name = "exercise-1"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+default = ["std"] # 默认执行std终端输出特性
+tui = [] # 启动tui模式
+std = [] # 启用std模式
+
+[dependencies]
+libafl = { version = "0.11.2" }
+libafl_bolts = { version = "0.11.2" }

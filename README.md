@@ -21,6 +21,7 @@ LibAFL Study Road
 - [=] [LibAFL's - example fuzzers](https://github.com/AFLplusplus/LibAFL/tree/main/fuzzers)
   - [x] [Baby fuzzer](./example/README.md#baby-fuzzer)
 - [=] [fuzzing-101-solutions](https://github.com/epi052/fuzzing-101-solutions)
+  - [x] [xpdf fuzzer](./fuzzing-101-solutions/README.md)
 
 ## Practice
 > libafl version: 0.11.2
