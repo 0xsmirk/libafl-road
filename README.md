@@ -15,9 +15,15 @@ LibAFL Study Road
 - [LibAFL's Book - zh](https://libafl-book-zh.zu1k.com/)
 
 ## Example
+> libafl version: 0.11.2
+>
 
-- [进行中] [fuzzing-101-solutions](https://github.com/epi052/fuzzing-101-solutions)
+- [=] [LibAFL's - example fuzzers](https://github.com/AFLplusplus/LibAFL/tree/main/fuzzers)
+  - [x] [Baby fuzzer](./example/README.md#baby-fuzzer)
+- [=] [fuzzing-101-solutions](https://github.com/epi052/fuzzing-101-solutions)
 
 ## Practice
+> libafl version: 0.11.2
+>
 
 - [x] [CVE-2014-0160 openssl heartbleed](./practice/openssl_heartbleed/README.md)

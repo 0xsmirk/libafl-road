@@ -1,0 +1,32 @@
+# 定义当前项目包的相关信息:包名、版本、编辑时间、编译等
+[package]
+name = "baby_fuzzer"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+# [features]是一个用于定义项目特性的部分，特性是一种在Cargo中启用或禁用某些功能的机制。
+# 通过定义特性，您可以根据需要选择性地启用或禁用某些代码块或功能模块。这对于在不同的环境或使用不同的功能集时非常有用。
+# 如何使用?
+# cargo run -F panic
+[features]
+default = ["std"] # 默认执行std终端输出特性
+tui = [] # 启动tui模式
+std = [] # 启用std模式
+panic = [] # 启用panic模式
+
+# 希望恐慌不会简单地导致程序退出，而是会引发一个 abort，然后可以被模糊器捕获。
+[profile.dev]
+panic = "abort"
+
+# 编译release版本的参数
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3
+debug = true
+
+[dependencies]
+libafl = { version = "0.11.2" }
+libafl_bolts = { version =  "0.11.2" }
